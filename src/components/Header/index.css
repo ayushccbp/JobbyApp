@@ -1,0 +1,51 @@
+.navbar-container {
+  background-color: #202020;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px 15px 25px;
+}
+.website-logo {
+  width: 150px;
+  height: 40px;
+}
+.header-list-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.home {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.logout-button {
+  background-color: #4f46e5;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  border: none;
+  width: 110px;
+  cursor: pointer;
+}
+.jon-heading {
+  margin-left: 40px;
+}
+.link-item {
+  text-decoration: none;
+}
+
+.icon-container {
+  display: flex;
+}
+
+.nav-icon {
+  color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
