@@ -32,46 +32,48 @@ const Header = props => {
 
   return (
     <nav className="navbar-container">
-      <div>
+      <ul className="nav">
         <Link to="/" className="link-item">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-            alt="website logo"
-            className="website-logo"
-          />
+          <li>
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+              alt="website logo"
+              className="website-logo"
+            />
+          </li>
         </Link>
-      </div>
-      {windowSize[0] < 590 ? (
-        <div className="icon-container">
-          <Link to="/" className="link-item">
-            <AiFillHome className="nav-icon" />
-          </Link>
-          <Link to="/jobs" className="link-item">
-            <MdMail className="nav-icon" />
-          </Link>
-          <FiLogOut onClick={onClickLogout} className="nav-icon" />
-        </div>
-      ) : (
-        <>
-          <ul className="header-list-items">
+        {windowSize[0] < 590 ? (
+          <li className="icon-container">
             <Link to="/" className="link-item">
-              <li className="home-heading home">Home</li>
+              <AiFillHome className="nav-icon" />
             </Link>
             <Link to="/jobs" className="link-item">
-              <li className="jon-heading home">Jobs</li>
+              <MdMail className="nav-icon" />
             </Link>
-          </ul>
-          <div>
-            <button
-              type="button"
-              className="logout-button"
-              onClick={onClickLogout}
-            >
-              Logout
-            </button>
-          </div>
-        </>
-      )}
+            <FiLogOut onClick={onClickLogout} className="nav-icon" />
+          </li>
+        ) : (
+          <>
+            <li className="header-list-items">
+              <Link to="/" className="link-item">
+                <li className="home-heading home">Home</li>
+              </Link>
+              <Link to="/jobs" className="link-item">
+                <li className="jon-heading home">Jobs</li>
+              </Link>
+            </li>
+            <li>
+              <button
+                type="button"
+                className="logout-button"
+                onClick={onClickLogout}
+              >
+                Logout
+              </button>
+            </li>
+          </>
+        )}
+      </ul>
     </nav>
   )
 }
