@@ -7,18 +7,28 @@
   align-items: center;
 }
 .not-found-image {
-  width: 400px;
+  width: 80%;
+  max-width: 400px;
 }
 .not-found-heading {
   font-size: 44px;
   font-family: 'Roboto';
   font-weight: 800;
   margin-top: 20px;
-  color: #fff;
+  color: #ffffff;
+  text-align: center;
 }
+
+@media screen and (max-width: 576px) {
+  .not-found-heading {
+    font-size: 30px;
+  }
+}
+
 .not-desc {
   font-size: 18px;
   font-family: 'Roboto';
   margin-top: 20px;
-  color: #fff;
+  color: #ffffff;
+  text-align: center;
 }

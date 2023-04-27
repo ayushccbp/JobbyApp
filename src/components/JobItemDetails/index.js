@@ -178,7 +178,7 @@ class JobItemDetails extends Component {
   }
 
   renderFailureView = () => (
-    <div className="render-loading-view">
+    <div className="failure-view-container">
       <img
         src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
         alt="failure view"

@@ -6,6 +6,7 @@
   align-items: center;
   padding: 30px;
   width: 100%;
+  min-height: 100vh;
 }
 .full-job-item-container {
   display: flex;
@@ -205,4 +206,23 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-item-failure-button {
+  background-color: #4f46e5;
+  border: none;
+  width: 150px;
+  padding: 12px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
 }
