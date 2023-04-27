@@ -6,7 +6,7 @@ const SkillsCard = props => {
 
   return (
     <li className="skill-list-items">
-      <div className="skill-container">
+      <div className="skill-item-container">
         <img src={imageUrl} alt={name} className="skill-image" />
         <p className="image-name">{name}</p>
       </div>

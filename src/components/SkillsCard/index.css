@@ -5,9 +5,19 @@
   width: 30%;
   margin-bottom: 50px;
 }
-.skill-container {
-  display: flex;
+
+@media screen and (max-width: 576px) {
+  .skill-list-items {
+    margin-right: 30px;
+  }
 }
+
+.skill-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .skill-image {
   width: 60px;
   margin-right: 20px;

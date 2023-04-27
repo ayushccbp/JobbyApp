@@ -6,9 +6,9 @@
   border-radius: 15px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 920px) {
   .similar-list-docs {
-    width: 80%;
+    flex-grow: 1;
   }
 }
 
